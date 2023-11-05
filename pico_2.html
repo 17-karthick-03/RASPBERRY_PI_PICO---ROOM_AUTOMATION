@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMART ROOM</title>
+  </head>
+  <style>
+    .on {
+      transition: 0.5s;
+      box-shadow: 0 0 5px green, 0 0 15px green;
+      border: solid;
+      border-width: 3px;
+    }
+
+    .on:hover {
+      box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
+    }
+
+    .on:active {
+      transform: scale(0.93);
+    }
+    .off {
+      transition: 0.5s;
+      box-shadow: 0 0 5px red, 0 0 15px red;
+      border: solid;
+      border-width: 3px;
+    }
+    .off:active {
+      transform: scale(0.93);
+    }
+    .off:hover {
+      box-shadow: 0 0 5px whitesmoke, 0 0 25px whitesmoke, 0 0 50px whitesmoke;
+    }
+  </style>
+  <body style="background-color: #252525">
+    <h1
+      style="
+        margin-top: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 5px;
+        background: linear-gradient(
+          to left,
+          rgb(125, 212, 66),
+          rgb(0, 255, 213),
+          rgb(174, 71, 233)
+        );
+        color: transparent;
+        -webkit-background-clip: text;
+        height: 77px;
+      "
+    >
+      LIGHT & FAN
+    </h1>
+    <pre
+      style="
+        background: linear-gradient(
+          to left,
+          rgb(125, 212, 66),
+          rgb(0, 255, 213),
+          rgb(174, 71, 233)
+        );
+        color: transparent;
+        -webkit-background-clip: text;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      "
+    >
+CONTROL BULB AND FAN 
+USING 
+RASPBERRY PI PICO W</pre
+    >
+    <h1
+      style="
+        margin-top: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        padding-top: -30px;
+        background: linear-gradient(
+          to left,
+          rgb(125, 212, 66),
+          rgb(0, 255, 213),
+          rgb(174, 71, 233)
+        );
+        color: transparent;
+        text-align: center;
+        -webkit-background-clip: text;
+        height: auto;
+      "
+    >
+      LIGHT
+    </h1>
+    <form action="./light-on">
+      <input type="submit" value="ON" class="on"
+      style="
+       border-radius: 20px;
+        color: rgb(255, 255, 255);
+        background: green;
+        height: 40px;
+        width: 120px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        margin-top: 28px;
+        font-size: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      "/> 
+    </form>
+    <form action="./light-off">
+      <input type="submit" value="OFF" class="off"
+      style="
+       border-radius: 20px;
+        color: rgb(255, 255, 255);
+        background: red;
+        height: 40px;
+        width: 120px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      "/> 
+    </form>
+    <br />
+   
+    <h1
+      style="
+        margin-top: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        padding-top: -30px;
+        background: linear-gradient(
+          to left,
+          rgb(125, 212, 66),
+          rgb(0, 255, 213),
+          rgb(174, 71, 233)
+        );
+        color: transparent;
+        text-align: center;
+        -webkit-background-clip: text;
+        height: auto;
+      "
+    >
+      FAN
+    </h1>
+    <form action="./fan-on">
+      <input type="submit" value="ON" class="on"
+      style="
+       border-radius: 20px;
+        color: rgb(255, 255, 255);
+        background: green;
+        height: 40px;
+        width: 120px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        margin-top: 28px;
+        font-size: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      "/> 
+    </form>
+    <form action="./fan-off">
+      <input type="submit" value="OFF" class="off"
+      style="
+       border-radius: 20px;
+        color: rgb(255, 255, 255);
+        background: red;
+        height: 40px;
+        width: 120px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      "/> 
+    </form>
+    
+    <br />
+  </body>
+</html>
+
+
