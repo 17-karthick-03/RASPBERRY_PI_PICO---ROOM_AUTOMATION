@@ -34,7 +34,8 @@ CONNECT YOUR HOME WIFI NETWORK
 wlan.connect("SSID","PASSWORD")
 
 LET CONNECT WITH ABOVE MENTIONED WIFI NETWORK
-"""wait = 10
+
+wait = 10
 
 while wait > 0:
 
