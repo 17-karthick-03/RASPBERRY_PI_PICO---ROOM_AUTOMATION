@@ -17,11 +17,11 @@ COPY THE FILES main.py AND pico_2.html TO PICO W
 
 1.Connect Relay Line 1 in Pico GP16 to control Light
 
-LiGhT = Pin(16,Pin.OUT)
+  LiGhT = Pin(16,Pin.OUT)
 
 2.Connect Relay Line 1 in Pico GP14 to control Fan
 
-FaN = Pin(14,Pin.OUT)
+  FaN = Pin(14,Pin.OUT)
 
 
 RELAY PIN OUTS
@@ -31,35 +31,35 @@ CONNECT NORMALLY OPEN WITH OTHER END OF APPLIANCE.
 
 CONNECT YOUR HOME WIFI NETWORK
 
-wlan.connect("SSID","PASSWORD")
+  wlan.connect("SSID","PASSWORD")
 
 LET CONNECT WITH ABOVE MENTIONED WIFI NETWORK
 
-wait = 10
+  wait = 10
 
-while wait > 0:
+  while wait > 0:
 
-    if wlan.status() < 0 or wlan.status() >= 3:
+      if wlan.status() < 0 or wlan.status() >= 3:
 
-        break
+          break
 
-    wait -= 1
+      wait -= 1
 
-    print('waiting for connection...')
+      print('waiting for connection...')
 
-    time.sleep(1)
+      time.sleep(1)
 
  
 # Handle connection error
 
-if wlan.status() != 3:
+  if wlan.status() != 3:
 
-    raise RuntimeError('wifi connection failed')"""
+      raise RuntimeError('wifi connection failed')
 
 
 THIS LINE WILL DISPLAY THE IP ADDRESS, WHICH YOU SIMPLE COPY AND PASTE IT ON YOUR FAVOURITE BROWSER AND CONTROL YOUR ROOM LINE AND FAN
 
-print('IP: ', ip)
+  print('IP: ', ip)
 
 OR SIMPLY GO TO SETTING AND SELECT WIFI AND SELECT DETAIL SEE WIFI IP'S ADDR
 
